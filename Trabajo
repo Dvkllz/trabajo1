@@ -1,0 +1,37 @@
+# a. One-dimensional list of size 5
+one_dimensional_list = ["Python", "Java", "C++", "HTML", "CSS"]
+
+# b. Two-dimensional list (3x3)
+two_dimensional_list = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+2. Accessing elements of a list
+# a. Access and print the second element of the one-dimensional list
+print("Second element:", one_dimensional_list[1])
+
+# b. Access and print the element in the second row and second column
+print("Element [2][2]:", two_dimensional_list[1][1])
+3. Insertion and deletion of elements
+# a. Insert "Data Structures" at position 3
+one_dimensional_list.insert(2, "Data Structures")
+print("List after insertion:", one_dimensional_list)
+
+# b. Delete the element in the third row and third column
+del two_dimensional_list[2][2]
+print("Two-dimensional list after deletion:", two_dimensional_list)
+4. Searching for elements in an array
+# a. Search for "Data Structures" in the one-dimensional list and return its index
+index = one_dimensional_list.index("Data Structures")
+print("Index of 'Data Structures':", index)
+
+# b. Search for a preferred value in the second row of the two-dimensional list
+value_to_search = 5
+row = 1  # second row
+
+if value_to_search in two_dimensional_list[row]:
+    column = two_dimensional_list[row].index(value_to_search)
+    print(f"Value {value_to_search} found at index [{row}][{column}]")
+else:
+    print("Value not found")
